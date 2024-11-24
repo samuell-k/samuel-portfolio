@@ -1,0 +1,1099 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Personal | portfolio</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="#home" class="logo">Samuel
+            <span>kamanzi</span>
+        </a>
+
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#project">Projects</a>
+            <a href="#service">Services</a>
+            <!-- <a href="#testmonials">Testimonials</a> -->
+            <a href="#contact">Contact</a>
+
+        </nav>
+
+    </header>
+    <section class="home" id="home">
+
+        <div class="home-content">
+
+            <h1 style="font-size: 35px;">Hi, It's <span>samuel</span> </h1>
+            <h3 class="text-animation">I'm a <span></span></h3>
+
+            <p class="developer-intro">
+                I am a highly skilled full-stack developer proficient in both front-end and back-end technologies,
+                allowing me to design and build comprehensive web applications that deliver exceptional and seamless
+                user experiences. With a strong focus on user-centric design and functionality, I thrive on tackling
+                complex challenges and turning innovative ideas into reality through elegant and efficient code. My
+                passion for continuous learning keeps me at the forefront of emerging technologies, ensuring that I
+                deliver not just solutions, but transformative digital experiences that elevate businesses and engage
+                users.
+            </p>
+
+
+            <div class="social-icons">
+                <a href="https://linkedin.com/in/samuell-k-087260317" target="_blank" class="social-link">
+                    <i class='bx bxl-linkedin'></i>
+                </a>
+                
+                <a href="https://github.com/samuell-" target="_blank" class="social-link">
+                    <i class='bx bxl-github'></i>
+                </a>
+                <a href="https://www.instagram.com/yourusername" target="_blank" class="social-link">
+                    <i class='bx bxl-instagram'></i>
+                </a>
+                <a href="https://x.com/samuell_k/" target="_blank" class="social-link">
+                    <i class='bx bxl-twitter'></i>
+                </a>
+                <a href="whatsapp://send?phone=+250799393729" target="_blank" class="social-link">
+                    <i class='bx bxl-whatsapp'></i>
+                </a>
+                <a href="https://www.facebook.com/yourprofile" target="_blank" class="social-link">
+                    <i class='bx bxl-facebook'></i>
+                </a>
+
+            </div>
+            <style>
+                :root {
+                    --bg-color: #0F172A; 
+                    --second-bg-color: #1E293B; 
+                    --text-color: #E2E8F0; 
+                    --main-color: #5A8CAE; 
+                }
+        
+                body {
+                    margin: 0;
+                    font-family: Arial, sans-serif;
+                    background-color: var(--bg-color);
+                    color: var(--text-color);
+                }
+        
+                .btn-group {
+                    text-align: center;
+                    margin: 20px 0;
+                }
+                .btn {
+                    text-decoration: none;
+                    padding: 10px 20px;
+                    margin: 5px;
+                    background-color: var(--main-color);
+                    color: var(--text-color);
+                    border-radius: 5px;
+                    font-weight: bold;
+                    transition: background 0.3s ease;
+                }
+                .btn:hover {
+                    background-color: var(--text-color);
+                    color: var(--bg-color);
+                }
+        
+                /* Pop-up form */
+                .popup-form {
+                    display: none; /* Hidden by default */
+                    position: fixed;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    background: var(--second-bg-color);
+                    color: var(--text-color);
+                    padding: 20px;
+                    border-radius: 8px;
+                    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+                    z-index: 1000;
+                    width: 90%;
+                    max-width: 400px;
+                }
+                .popup-form input, .popup-form textarea, .popup-form button {
+                    width: 100%;
+                    margin: 10px 0;
+                    padding: 10px;
+                    font-size: 16px;
+                    background-color: var(--bg-color);
+                    color: var(--text-color);
+                    border: 1px solid var(--main-color);
+                    border-radius: 4px;
+                }
+                .popup-form button {
+                    background-color: var(--main-color);
+                    color: var(--text-color);
+                    cursor: pointer;
+                }
+                .popup-form button:hover {
+                    background-color: var(--text-color);
+                    color: var(--bg-color);
+                }
+        
+                .popup-overlay {
+                    display: none; /* Hidden by default */
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(0, 0, 0, 0.5);
+                    z-index: 999;
+                }
+                .close-btn {
+                    background: red;
+                    color: var(--text-color);
+                    border: none;
+                    cursor: pointer;
+                    padding: 5px 10px;
+                    border-radius: 4px;
+                    float: right;
+                }
+        
+                /* Responsive design */
+                @media screen and (max-width: 768px) {
+                    .btn {
+                        font-size: 14px;
+                    }
+                }
+            </style>
+        </head>
+        <body>
+        
+            <div class="btn-group">
+                <a href="#" class="btn" id="hire-btn">Hire</a>
+                <a href="#contact" class="btn">Contact</a>
+            </div>
+        
+            <!-- Pop-up Overlay -->
+            <div class="popup-overlay" id="popup-overlay"></div>
+        
+            <!-- Hire Pop-Up Form -->
+            <div class="popup-form" id="hire-popup-form">
+                <button class="close-btn" id="hire-close-btn">Close</button>
+                <h2>Hire Form</h2>
+                <form id="hire-form">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="details" rows="4" placeholder="Project Details" required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        
+            <script>
+                // Get elements
+                const hireBtn = document.getElementById('hire-btn');
+                const hirePopupForm = document.getElementById('hire-popup-form');
+                const popupOverlay2 = document.getElementById('popup-overlay');
+                const hireCloseBtn = document.getElementById('hire-close-btn');
+        
+                // Show the hire form when "Hire" is clicked
+                hireBtn.addEventListener('click', (e) => {
+                    e.preventDefault(); // Prevent link navigation
+                    hirePopupForm.style.display = 'block';
+                    popupOverlay2.style.display = 'block';
+                });
+        
+                // Hide the hire form when "Close" is clicked
+                hireCloseBtn.addEventListener('click', () => {
+                    hirePopupForm.style.display = 'none';
+                    popupOverlay2.style.display = 'none';
+                });
+        
+                // Hide the form when clicking outside of it
+                popupOverlay.addEventListener('click', () => {
+                    hirePopupForm.style.display = 'none';
+                    popupOverlay2.style.display = 'none';
+                });
+        
+                // Handle form submission
+                document.getElementById('hire-form').addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    alert('Thank you for reaching out to us!');
+                    hirePopupForm.style.display = 'none';
+                    popupOverlay2.style.display = 'none';
+                });
+            </script>
+        </div>
+        <div class="home-img">
+            <img src="images/meeee.png" alt="Profile Image" id="profile-image">
+            <div class="mirrored-text" id="mirrored-text"></div>
+        </div>
+
+        <div class="motivation-section">
+            <h2>My Motivation</h2>
+            <div class="motivation-content">
+                <p>this is my inspiration quotes:</p>
+                <p>"Code is like humor. When you have to explain it, it’s bad." – Cory House</p>
+
+                <p id="read-more">Read More...</p>
+
+                <div id="full-quotes">
+                    <p>"First, solve the problem. Then, write the code." – John Johnson</p>
+                    <p>"Programming isn’t about what you know; it’s about what you can figure out." – Chris Pine</p>
+                    <p>"The only way to learn a new programming language is by writing programs in it." – Dennis Ritchie
+                    </p>
+                    <p>"The computer was born to solve problems that did not exist before." – Bill Gates</p>
+                    <p>"Learning to write programs stretches your mind and helps you think better, creates a way of
+                        thinking about things that I think is helpful in all domains." – Bill Gates</p>
+                    <p>"I am not a great programmer; I am just a good programmer with great habits." – Kent Beck</p>
+                    <p>"Experience is the name everyone gives to their mistakes." – Oscar Wilde</p>
+                    <p>"Any fool can write code that a computer can understand. Good programmers write code that humans
+                        can understand." – Martin Fowler</p>
+                    <p>"Think twice, code once." – Anonymous</p>
+                    <p>"Don’t be afraid to start over. This time, you’re not starting from scratch; you’re starting from
+                        experience." – Anonymous</p>
+                    <p>"Success is not in the lines of code you write but in the solutions you create." – Anonymous</p>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <section class="education" id="education">
+        <h2 class="heading">Education</h2>
+        <div class="timeline-items">
+            <div class="timeline-item">
+                <div class="timeline-dot"> </div>
+                <div class="timeline-date">2021
+                </div>
+                <div class="timeline-content">
+
+                    <h3>High School</h3>
+                    <p>I hold a high school certificate in Software Development (SOD), where I gained foundational knowledge in programming, system design, and software engineering principles. This education laid the groundwork for my passion and expertise in the IT field.</p>
+                    
+
+                </div>
+
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"> </div>
+                <div class="timeline-date">2024
+                </div>
+                <div class="timeline-content">
+
+                    <h3>University</h3>
+                    <p>I am a final-year student pursuing a degree in Information Technology at Rwanda Polytechnic, Tumba College of Technology. My studies have equipped me with strong technical knowledge and practical skills in software development, networking, and database management, preparing me for a successful career in the IT field.</p>
+                    
+
+                </div>
+
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"> </div>
+                <div class="timeline-date">2024
+                </div>
+                <div class="timeline-content">
+
+                    <h3>Internship</h3>
+<p>I successfully completed my coding internship at Infinity Tech Solutions Ltd, where I gained hands-on experience in software development, problem-solving, and collaborative teamwork. The internship allowed me to enhance my skills in building efficient and scalable applications while contributing to real-world projects.</p>
+
+                </div>
+
+            </div>
+
+
+            <!-- <div class="timeline-item">
+                <div class="timeline-dot"> </div>
+                <div class="timeline-date">2024
+                </div>
+                <div class="timeline-content">
+
+                    <h3>Job 1</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Sint tempora error nesciunt minima laboriosam
+                        fugiat eaque quaerat qui accusantium, corporis repudiandae alias. Exercitationem praesentium
+                        laboriosam nesciunt iure esse soluta debitis.</p>
+
+                </div>
+
+            </div> -->
+
+
+        </div>
+    </section>
+
+
+    <section class="skills-section" id="skills">
+        <h2>My Skills</h2>
+        <div class="skills-category">
+            <!-- Skill 1 -->
+            <div class="skill-card">
+                <h3>Web Development</h3>
+                <p>HTML, CSS, JavaScript, PHP, React</p>
+                <div class="progress-bar">
+                    <span style="width: 90%;"></span> <!-- Adjust width based on skill level -->
+                </div>
+            </div>
+
+            <!-- Skill 2 -->
+            <div class="skill-card">
+                <h3>Database Management</h3>
+                <p>SQL, MySQL, MariaDB, PostgreSQL,Mongo DB,Oracle Db</p>
+                <div class="progress-bar">
+                    <span style="width: 85%;"></span> <!-- Adjust width based on skill level -->
+                </div>
+            </div>
+
+            <!-- Skill 3 -->
+            <div class="skill-card">
+                <h3>Backend Development</h3>
+                <p>PHP, Node.js, Java, Spring MVC</p>
+                <div class="progress-bar">
+                    <span style="width: 70%;"></span> <!-- Adjust width based on skill level -->
+                </div>
+            </div>
+
+            <!-- Skill 4 -->
+            <div class="skill-card">
+                <h3>UI/UX Design</h3>
+                <p>Figma, Adobe XD, Web Design</p>
+                <div class="progress-bar">
+                    <span style="width: 80%;"></span> <!-- Adjust width based on skill level -->
+                </div>
+
+
+                <!-- Skill 5 -->
+                <!-- <div class="skill-card">
+                <h3>Project Management</h3>
+                <p>Agile, Scrum, Jira</p>
+                <div class="progress-bar">
+                    <span style="width: 85%;"></span> 
+                </div>
+            </div> -->
+            </div>
+    </section>
+
+
+
+    <section class="projects-section" id="project">
+        <h2>My Projects</h2>
+        <div class="projects-category">
+            <!-- Project 1 -->
+            <div class="project-card">
+                <img src="images/inve.png" alt="Project 1 Image">
+                <h3>Inventory Management System</h3>
+                <p>I developed this project using Java Spring MVC to create a robust and user-friendly platform for
+                    managing inventory items.
+                    The system allows users to add, update, and delete products, track stock levels, and ensure accurate
+                    inventory management.
+                    It provides a seamless interface for businesses to manage their product data efficiently.</p>
+                <a href="https://github.com/samuell-k/inventory-management-system" class="project-link"
+                    target="_blank">View Project</a>
+            </div>
+
+
+            <!-- Project 2 -->
+            <div class="project-card">
+                <img src="images/vote.png" alt="Project 2 Image">
+                <h3>Online Voting System</h3>
+                <p>This project was developed using PHP to provide a secure and efficient platform for conducting online
+                    voting.
+                    The system allows users to register, log in, and cast their votes electronically.
+                    It features real-time vote tracking, user authentication, and robust backend logic to ensure the
+                    integrity of the voting process.</p>
+                <a href="https://github.com/samuell-k/online_voting_system" class="project-link" target="_blank">View
+                    Project</a>
+            </div>
+
+
+            <!-- Project 3 -->
+            <div class="project-card">
+                <img src="images/file.png" alt="Project 3 Image">
+                <h3>School File Management System</h3>
+                <p>This project was developed using PHP to create an organized platform for managing school files and
+                    documents efficiently.
+                    The system allows administrators and staff to upload, categorize, and retrieve files securely.
+                    It includes user authentication, file access control, and a user-friendly interface for seamless
+                    operation.</p>
+                <a href="https://github.com/samuell-k/school-file-management-system" class="project-link" target="_blank">View
+                    Project</a>
+            </div>
+
+            <!-- Project 4 -->
+
+            <div class="project-card">
+                <img src="images/record.png" alt="Project 3 Image">
+                <h3>Student Record Management System</h3>
+                <p>This project was developed using React.js for the frontend, Node.js for the backend, and MongoDB as
+                    the database.
+                    The system provides a seamless platform for managing student records, allowing administrators to
+                    add, update, view, and delete student details.
+                    It features a responsive user interface, secure API endpoints, and a scalable database structure.
+                </p>
+                <a href="https://github.com/samuell-k/Student-Record-Management-System" class="project-link" target="_blank">View
+                    Project</a>
+            </div>
+
+            <!-- Project 5 -->
+            <div class="project-card">
+                <img src="images/chat.png" alt="Project 3 Image">
+                <h3>Chat Web Application</h3>
+                <p>This project was developed using PHP for the backend, with a user-friendly frontend.
+                    The system enables real-time communication between users through a secure chat interface.
+                    It includes features such as user authentication, message storage, and live message updates,
+                    allowing users to send and receive messages instantly in a web environment.</p>
+                <a href="https://github.com/samuell-k/Chat-Web-Application" class="project-link" target="_blank">View Project</a>
+            </div>
+
+
+            <!-- Project 5 -->
+            <!-- Project 3 -->
+            <div class="project-card">
+                <img src="images/a.jpg" alt="Project 3 Image">
+                <h3>Exclusive Watch Collection</h3>
+                <p>This project was developed using HTML, CSS, and JavaScript to create a visually stunning and
+                    interactive website for showcasing luxury watches.
+                    It features a responsive design, elegant layouts, and smooth transitions to highlight different
+                    watch collections, providing users with an immersive browsing experience.</p>
+                <a href="https://samuell-k.github.io/Luxury-Watches/" class="project-link" target="_blank">View Project</a>
+            </div>
+
+
+            <div class="project-card">
+                <img src="images/ecomerce .png" alt="E-Commerce Website" class="project-image">
+                <h3>E-Commerce Website </h3>
+                <p>This is an e-commerce website built using React.js technology. 
+                    It features a responsive design, product listing, shopping cart,
+                     and payment integration. Users can browse products, add them to the cart, 
+                     and proceed to checkout with various payment options.(work as templates)</p>
+                <a href="https://github.com/samuell-k/E-Commerce-Website-" class="project-link" target="_blank">View Project</a>
+            </div>
+            
+
+            <div class="project-card">
+                <img src="images/lang.png" alt="Language Learning System Image">
+                <h3>Language Learning System</h3>
+                <p>This project is a comprehensive language learning platform developed using React.js,
+                     Express, Node.js, and MongoDB. It allows users to learn new languages with interactive lessons,
+                      quizzes, and real-time progress tracking.</p>
+                <a href="#" class="project-link" onclick="alert('This project is in progress.');">View Project</a>
+            </div>
+            
+            
+            <!-- More project cards can be added similarly -->
+        </div>
+    </section>
+
+    
+    
+    <section class="services" id="service">
+        <h2 class="heading">Our Services</h2>
+        <div class="services-container">
+            <div class="service-box">
+                <div class="service-info">
+                    <i class="fas fa-paint-brush service-icon"></i>
+                    <h4>UI/UX Design</h4>
+                    <p>
+                        We specialize in creating intuitive and aesthetically pleasing user interfaces and experiences. 
+                        Our designs focus on usability and simplicity, ensuring a seamless experience across all devices.
+                    </p>
+                </div>
+            </div>
+    
+            <div class="service-box">
+                <div class="service-info">
+                    <i class="fas fa-code service-icon"></i>
+                    <h4>Frontend Development</h4>
+                    <p>
+                        Our frontend development team excels in crafting responsive, fast, and engaging websites. 
+                        We use modern web technologies like React, Angular, and Vue.js to build dynamic user interfaces.
+                    </p>
+                </div>
+            </div>
+    
+            <div class="service-box">
+                <div class="service-info">
+                    <i class="fas fa-server service-icon"></i>
+                    <h4>Backend Development</h4>
+                    <p>
+                        We provide robust and scalable backend development using Node.js, Express, and other server-side technologies. 
+                        Our APIs and databases are built for performance, ensuring smooth user interactions and data processing.
+                    </p>
+                </div>
+            </div>
+    
+            <div class="service-box">
+                <div class="service-info">
+                    <i class="fas fa-laptop service-icon"></i>
+                    <h4>Web Application Development</h4>
+                    <p>
+                        We create custom web applications that solve real business problems. From e-commerce platforms to internal management systems, 
+                        we build scalable and secure applications tailored to your needs.
+                    </p>
+                </div>
+            </div>
+    
+            <div class="service-box">
+                <div class="service-info">
+                    <i class="fas fa-mobile-alt service-icon"></i>
+                    <h4>Mobile App Development</h4>
+                    <p>
+                        Our team builds cross-platform mobile applications that work seamlessly across iOS and Android. 
+                        We use frameworks like Flutter and React Native to deliver high-quality, native-like experiences.
+                    </p>
+                </div>
+            </div>
+    
+            <!-- <div class="service-box">
+                <div class="service-info">
+                    <i class="fas fa-search service-icon"></i>
+                    <h4>Search Engine Optimization (SEO)</h4>
+                    <p>
+                        Improve your website’s visibility with our SEO services. We offer keyword research, on-page optimization, 
+                        content strategies, and link-building techniques that drive organic traffic and improve rankings on search engines.
+                    </p>
+                </div>
+            </div> -->
+    
+            <!-- <div class="service-box">
+                <div class="service-info">
+                    <i class="fas fa-cloud service-icon"></i>
+                    <h4>Cloud Computing</h4>
+                    <p>
+                        Leverage the power of the cloud to scale your infrastructure effortlessly. We help businesses migrate to cloud platforms 
+                        such as AWS, Azure, and Google Cloud, ensuring high availability, security, and cost efficiency.
+                    </p>
+                </div>
+            </div> -->
+<!--     
+            <div class="service-box">
+                <div class="service-info">
+                    <i class="fas fa-shield-alt service-icon"></i>
+                    <h4>Cybersecurity</h4>
+                    <p>
+                        Protect your business from cyber threats with our cybersecurity solutions. From penetration testing to vulnerability assessments, 
+                        we ensure your data and systems are secure against attacks and breaches.
+                    </p>
+                </div>
+            </div> -->
+    
+            <!-- <div class="service-box">
+                <div class="service-info">
+                    <i class="fas fa-chart-line service-icon"></i>
+                    <h4>Data Analytics</h4>
+                    <p>
+                        Unlock valuable insights with our data analytics services. We help you collect, analyze, and interpret data to make informed decisions 
+                        and drive business growth.
+                    </p>
+                </div>
+            </div> -->
+    
+            <div class="service-box">
+                <div class="service-info">
+                    <i class="fas fa-bullhorn service-icon"></i>
+                    <h4>Digital Marketing</h4>
+                    <p>
+                        Our digital marketing strategies help you reach your target audience through various channels like social media, email, and paid ads. 
+                        We focus on creating campaigns that convert leads into customers and build brand awareness.
+                    </p>
+                </div>
+            </div>
+    
+            <div class="service-box">
+                <div class="service-info">
+                    <i class="fas fa-cogs service-icon"></i>
+                    <h4>IT Support & Consulting</h4>
+                    <p>
+                        Get expert IT support and guidance for your business. Whether you need help with infrastructure, software, or troubleshooting, 
+                        our team is here to assist with solutions that help your organization stay productive and secure.
+                    </p>
+                </div>
+            </div>
+    
+            <div class="service-box">
+                <div class="service-info">
+                    <i class="fas fa-store service-icon"></i>
+                    <h4>E-commerce Solutions</h4>
+                    <p>
+                        Build your online store with our e-commerce solutions. We provide everything from designing your store to integrating payment systems, 
+                        ensuring a smooth shopping experience for your customers.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+
+
+    <!-- <section class="testmonials" id="testmonials">
+        <div class="testmonials-box">
+            <h2 class="heading">Testimonials</h2>
+            <div class="wrapper">
+                <div class="testimonial-item"> -->
+                    <!-- <img src="images/image.png" alt=""> -->
+                    <!-- <h2>Iradukunda Jean</h2>
+                    <div class="rating">
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+
+                    </div>
+                    <p>"Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit.
+                        Vero, laborum odio incidunt
+                        tempora neque officiis, distinctio minima reprehenderit temporibus nihil asperiores repellendus!
+                        Libero, inventore. Magni
+                        veniam quod officiis quae distinctio?</p>
+
+                </div>
+
+                <div class="testimonial-item"> -->
+                    <!-- <img src="images/image.png" alt=""> -->
+                    <!-- <h2>Iranzi Yves</h2>
+                    <div class="rating">
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                    </div>
+                    <p>"Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit.
+                        Vero, laborum odio incidunt
+                        tempora neque officiis, distinctio minima reprehenderit temporibus nihil asperiores repellendus!
+                        Libero, inventore. Magni
+                        veniam quod officiis quae distinctio?</p>
+
+                </div>
+
+
+                <div class="testimonial-item"> -->
+                    <!-- <img src="images/image.png" alt=""> -->
+                    <!-- <h2>Kuradusenge Eric</h2>
+                    <div class="rating">
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                    </div>
+                    <p>"Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit.
+                        Vero, laborum odio incidunt
+                        tempora neque officiis, distinctio minima reprehenderit temporibus nihil asperiores repellendus!
+                        Libero, inventore. Magni
+                        veniam quod officiis quae distinctio?</p>
+
+                </div>
+
+
+                <div class="testimonial-item"> -->
+                    <!-- <img src="images/image.png" alt=""> -->
+                    <!-- <h2>Irumva Joselyne</h2>
+                    <div class="rating">
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i> -->
+                        <!-- <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                    </div>
+                    <p>"Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit.
+                        Vero, laborum odio incidunt
+                        tempora neque officiis, distinctio minima reprehenderit temporibus nihil asperiores repellendus!
+                        Libero, inventore. Magni
+                        veniam quod officiis quae distinctio?</p>
+
+                </div>
+
+
+                <div class="testimonial-item"> -->
+                    <!-- <img src="images/image.png" alt=""> -->
+                    <!-- <h2>Beverage Drinking</h2>
+                    <div class="rating">
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                    </div>
+                    <p>"Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit.
+                        Vero, laborum odio incidunt
+                        tempora neque officiis, distinctio minima reprehenderit temporibus nihil asperiores repellendus!
+                        Libero, inventore. Magni
+                        veniam quod officiis quae distinctio?</p> -->
+<!-- 
+                </div>
+
+
+
+
+                <div class="testimonial-item" id="testmonials"> -->
+                    <!-- <img src="images/image.png" alt=""> -->
+                    <!-- <h2>New News.com</h2>
+                    <div class="rating">
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                    </div>
+                    <p>"Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit.
+                        Vero, laborum odio incidunt
+                        tempora neque officiis, distinctio minima reprehenderit temporibus nihil asperiores repellendus!
+                        Libero, inventore. Magni
+                        veniam quod officiis quae distinctio?</p>
+
+                </div>
+
+
+
+
+            </div>
+
+        </div>
+
+
+    </section>
+ -->
+
+
+    <section class="contact" id="contact">
+        <h2 class="heading">contact <span>Me</span></h2>
+        <form action="" method="post">
+            <div class="input-group">
+                <div class="input-box">
+                    <input type="text" name="" placeholder="Full Name">
+                    <input type="email" name="" placeholder="Email">
+                </div>
+                <div class="input-box">
+                    <input type="number" name="" placeholder="Phone Number">
+                    <input type="text" name="" placeholder="Subject">
+
+                </div>
+            </div>
+            <div class="input-group-2">
+                <textarea name="" cols="30" rows="10" placeholder="Your Message">
+
+    </textarea>
+
+                <input type="submit" name="" value="Send Message" class="btn">
+
+            </div>
+
+
+        </form>
+
+
+
+    </section>
+
+    <footer class="footer">
+        <div class="social-icons"
+            style="display: flex; justify-content: center; align-items: center; text-align: center; gap: 10px; margin: 20px 0;">
+            <a href="https://linkedin.com/in/samuell-k-087260317" target="_blank" class="social-link">
+                <i class='bx bxl-linkedin'></i>
+            </a>
+            
+            <a href="https://github.com/samuell-" target="_blank" class="social-link">
+                <i class='bx bxl-github'></i>
+            </a>
+            <a href="https://www.instagram.com/yourusername" target="_blank" class="social-link">
+                <i class='bx bxl-instagram'></i>
+            </a>
+            <a href="https://x.com/samuell_k/" target="_blank" class="social-link">
+                <i class='bx bxl-twitter'></i>
+            </a>
+            <a href="whatsapp://send?phone=+250799393729" target="_blank" class="social-link">
+                <i class='bx bxl-whatsapp'></i>
+            </a>
+            <a href="https://www.facebook.com/yourprofile" target="_blank" class="social-link">
+                <i class='bx bxl-facebook'></i>
+            </a>
+            <a href="https://www.pinterest.com/yourusername" target="_blank" class="social-link">
+                <i class='bx bxl-pinterest'></i>
+            </a>
+            <a href="https://www.reddit.com/user/yourusername" target="_blank" class="social-link">
+                <i class='bx bxl-reddit'></i>
+            </a>
+        </div>
+        <style>
+            /* Define theme colors */
+            :root {
+                --bg-color: #0F172A; 
+                --second-bg-color: #1E293B; 
+                --text-color: #E2E8F0; 
+                --main-color: #5A8CAE; 
+            }
+    
+            /* General styling */
+            body {
+                margin: 0;
+                font-family: Arial, sans-serif;
+                background-color: var(--bg-color);
+                color: var(--text-color);
+            }
+    
+            /* Navigation menu */
+            .list {
+                list-style: none;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                background-color: var(--second-bg-color);
+                margin: 0;
+                flex-wrap: wrap; /* Allows wrapping for smaller screens */
+            }
+            .list li {
+                margin: 10px 20px;
+            }
+            .list li a {
+                text-decoration: none;
+                color: var(--main-color);
+                font-weight: bold;
+                font-size: 13px;
+                transition: color 0.3s ease;
+            }
+            .list li a:hover {
+                color: var(--text-color);
+            }
+    
+            /* Pop-up form styling */
+            .popup-form {
+                display: none; /* Hidden by default */
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background: var(--second-bg-color);
+                color: var(--text-color);
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+                z-index: 1000;
+                width: 90%; /* Adjust for smaller screens */
+                max-width: 400px;
+            }
+            .popup-form input, .popup-form textarea, .popup-form button {
+                width: 100%;
+                margin: 10px 0;
+                padding: 10px;
+                font-size: 16px;
+                background-color: var(--bg-color);
+                color: var(--text-color);
+                border: 1px solid var(--main-color);
+                border-radius: 4px;
+            }
+            .popup-form button {
+                background-color: var(--main-color);
+                color: var(--text-color);
+                cursor: pointer;
+            }
+            .popup-form button:hover {
+                background-color: var(--text-color);
+                color: var(--bg-color);
+            }
+    
+            .popup-overlay {
+                display: none; /* Hidden by default */
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.5);
+                z-index: 999;
+            }
+            .close-btn {
+                background: red;
+                color: var(--text-color);
+                border: none;
+                cursor: pointer;
+                padding: 5px 10px;
+                border-radius: 4px;
+                float: right;
+            }
+    
+            /* Responsive Design */
+            @media screen and (max-width: 768px) {
+                .list li {
+                    margin: 4px 10px;
+                }
+                .list li a {
+                    font-size: 10px;
+                }
+            }
+    
+            @media screen and (max-width: 480px) {
+                .list {
+                    flex-direction: column; /* Stack menu items vertically */
+                    align-items: center;
+                }
+                .list li {
+                    margin: 8px 0;
+                }
+            }
+
+            /* ======== =   experience ========= */
+
+/* Base styles for the link */
+li a {
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Hover effect specific to the Experience link */
+.experience-link:hover::after {
+    content: "2 years";  /* This is the text that will appear on hover */
+    position: absolute;
+    bottom: 100%;  /* Position it above the link */
+    left: 0;
+    padding: 5px 10px;
+    background-color: green;  /* Green background color */
+    color: #fff;  /* White text color */
+    font-size: 1.5rem;  /* Font size for the text */
+    border-radius: 4px;
+    margin-bottom: 5px;  /* Adds space between the link and the hover text */
+}
+
+.site-link:hover::after {
+    content: "in progress";  /* This is the text that will appear on hover */
+    position: absolute;
+    bottom: 100%;  /* Position it above the link */
+    left: 0;
+    padding: 5px 10px;
+    background-color: green;  /* Green background color */
+    color: #fff;  /* White text color */
+    font-size: 1.5rem;  /* Font size for the text */
+    border-radius: 4px;
+    margin-bottom: 5px;  /* Adds space between the link and the hover text */
+}
+
+.blog-link:hover::after {
+    content: "in progress";  /* This is the text that will appear on hover */
+    position: absolute;
+    bottom: 100%;  /* Position it above the link */
+    left: 0;
+    padding: 5px 10px;
+    background-color: green;  /* Green background color */
+    color: #fff;  /* White text color */
+    font-size: 1.5rem;  /* Font size for the text */
+    border-radius: 4px;
+    margin-bottom: 5px;  /* Adds space between the link and the hover text */
+}
+
+
+.fq-link:hover::after {
+    content: "0 Q";  /* This is the text that will appear on hover */
+    position: absolute;
+    bottom: 100%;  /* Position it above the link */
+    left: 0;
+    padding: 5px 10px;
+    background-color: green;  /* Green background color */
+    color: #fff;  /* White text color */
+    font-size: 1.5rem;  /* Font size for the text */
+    border-radius: 4px;
+    margin-bottom: 5px;  /* Adds space between the link and the hover text */
+}
+
+
+
+
+        </style>
+    </head>
+    <body>
+        <ul class="list">
+            <li><a href="#qn" id="ask-q-btn">Ask Q</a></li>
+            <li><a href="#faq" class="fq-link">FAQ</a></li>
+            <li><a href="#service">Services</a></li>
+            <li><a href="#">About Me</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <!-- <li><a href="#testmonials">Testimonials</a></li> -->
+            <li><a href="#blog" class="blog-link">Blog</a></li>
+            <li><a href="#experience" class="experience-link">Experience</a></li>
+            <li><a href="https://docs.google.com/document/d/18qOstXR5wRk9cJ4eOxfPVYKoursKK_yMoX4pzY7OdJo/edit?usp=sharing" target="_blank">Resume</a></li>
+            <li><a href="#website" class="site-link">Website</a></li>
+        </ul>
+    
+        <!-- https://github.com/samuell-k/samuel-portfolio -->
+        <!-- Pop-up Form -->
+        <div class="popup-overlay" id="popup-overlay"></div>
+        <div class="popup-form" id="popup-form">
+            <button class="close-btn" id="close-btn">Close</button>
+            <h2>Ask a Question</h2>
+            <form id="ask-form">
+                <input type="text" name="name" placeholder="Enter your name" required>
+                <input type="email" name="email" placeholder="Enter your email" required>
+                <textarea name="question" rows="4" placeholder="Enter your question" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    
+        <script>
+            // Get elements
+            const askQBtn = document.getElementById('ask-q-btn');
+            const popupForm = document.getElementById('popup-form');
+            const popupOverlay = document.getElementById('popup-overlay');
+            const closeBtn = document.getElementById('close-btn');
+    
+            // Show the form when "Ask Q" is clicked
+            askQBtn.addEventListener('click', (e) => {
+                e.preventDefault(); // Prevent link navigation
+                popupForm.style.display = 'block';
+                popupOverlay.style.display = 'block';
+            });
+    
+            // Hide the form when "Close" is clicked
+            closeBtn.addEventListener('click', () => {
+                popupForm.style.display = 'none';
+                popupOverlay.style.display = 'none';
+            });
+    
+            // Hide the form when clicking outside of it
+            popupOverlay.addEventListener('click', () => {
+                popupForm.style.display = 'none';
+                popupOverlay.style.display = 'none';
+            });
+    
+            // Handle form submission
+            document.getElementById('ask-form').addEventListener('submit', (e) => {
+                e.preventDefault();
+                alert('Thank you for your question!');
+                popupForm.style.display = 'none';
+                popupOverlay.style.display = 'none';
+            }); 
+        </script>
+       
+        <p class="copyright">
+            &copy;Samuel kamanzi | Year 2019 | All Right Reserved | Email:kamanzisamuel@gmail.com
+        </p>
+
+
+    </footer>
+
+
+
+
+
+
+    <script src="script/script.js"></script>
+</body>
+
+</html>
