@@ -96,7 +96,7 @@ body {
     align-items: center;
     justify-content: center;
     gap: 15rem;
-    background-image: url('/images/coding.png'); /* Replace with the path to your image */
+    background-image: url('../images/coding.png'); /* Replace with the path to your image */
     background-size: cover; /* Ensures the image covers the entire section */
     background-position: center; /* Centers the image */
     background-repeat: no-repeat; /* Prevents the image from repeating */
@@ -260,7 +260,7 @@ span {
 
 .text-animation span::after {
     content: "";
-    background-image: url('/images/code.png'); /* Replace with your image URL */
+    background-image: url('../images/code.png');    /* Replace with your image URL */
     background-size: cover; /* Ensures the image covers the entire area */
     background-position: center; /* Centers the image */
     position: absolute;
